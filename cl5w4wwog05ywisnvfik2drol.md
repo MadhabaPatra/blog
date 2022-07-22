@@ -53,10 +53,16 @@ p {
 
 ```
 #top-modal {
-  top: 0;
-  position: absolute;
-}
+      top: 0;
+      left: 50%;
+      padding: 25px;
+      background-color: aqua;
+      position: absolute;
+    }
 /* It target the element with the id (top-modal). */```
+
+
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1658487779755/5_DqdM82C.png align="left")
 
 #### Class selector
 
@@ -69,6 +75,10 @@ p {
   color: red;
 }
 /* It target the all elements with the class(text-danger). */```
+
+
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1658487949739/zMVOne2mT.png align="left")
+
 
 ### 4.Group Selector
 - Grouping selectors helps to select all elements that you want to give same css.
@@ -88,6 +98,8 @@ element with id (text-alert),
 all <span> and <p> elements. 
 */```
 
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1658488146267/IxR0PJ0KO.png align="left")
+
 ### 5.Combined selector
 - Combined selector explains the relationship between the selectors.
 - A CSS selector can contain more than one  selector. Between the selectors, we can include a combined selector.
@@ -102,17 +114,19 @@ There are four different combined selectors in CSS:
 - For example:
 
 ```
-.hero p span
+div span
 {
   font-weight: 700;
-  color:cyan;
+  color:red;
 }
+
 /* It target 
 all <span> elements 
-inside <p> elements 
 which are child of hero class elements. 
 */```
 
+
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1658489154697/KQuJCxjnV.png align="left")
 #### 2. Child Selector (>)
 
 - It matches all elements that are the direct children of a a specified element.
@@ -121,12 +135,14 @@ which are child of hero class elements.
 - For example:
 
 ```
-div p
-{
-  color:red;
-  text-align:center;
-}
-/* It target all <p> elements that are direct children of a <div> element */```
+ div > span {
+      color: red;
+    }
+
+/* It target all <span> elements that are direct children of a <div> element */```
+
+
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1658488587021/aLVpTAyXf.png align="left")
 
 #### 3. Adjacent Sibling Selector (+)
 
@@ -136,15 +152,16 @@ div p
 - For example:
 
 ```
-div + p
+div + span
 {
   color:red;
   text-align:center;
 }
 /* 
-It target an <p> element that are direct children 
-and just after the <div> element 
+It target an <span> element that are neighbor to specified element just after the <div> element 
 */```
+
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1658488945408/i0DwxdMIJ.png align="left")
 
 #### 4. General Sibling Selector (~)
 
@@ -154,13 +171,14 @@ and just after the <div> element
 - For example:
 
 ```
-div ~ p
+div ~ span
 {
   color:red;
   text-align:center;
 }
 /* It target all <p> elements that are next siblings of <div> elements. */```
 
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1658488971287/gGBdbzlfD.png align="left")
 ### 6.Pseudo selector
 There are two type of Pseudo selector
 #### 1. Pseudo-element Selector
@@ -177,6 +195,8 @@ p::first-line
 }
 /* It target the first line of every <p> elements.  */```
 
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1658489240993/51eNQMgY2.png align="left")
+
 For more information about Pseudo-element Selector, visit [here](https://www.w3schools.com/css/css_pseudo_elements.asp).
 
 #### 2. Pseudo-classes Selector
@@ -191,6 +211,8 @@ a:hover
   color: red;
 }
 /* It styles <a> elements when someone hover mouse over it.  */```
+
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1658489369053/-opHNQQsW.png align="left")
 
 For more information about Pseudo-classes Selector, visit [here](https://www.w3schools.com/css/css_pseudo_classes.asp).
 
